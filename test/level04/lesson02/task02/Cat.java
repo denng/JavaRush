@@ -18,6 +18,6 @@ public class Cat {
             System.out.println(" минимум " + a);
 
         else
-            System.out.println(" минимум "+ b) ;
+            System.out.println(" минимум "+ b);
     }
 }
