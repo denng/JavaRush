@@ -21,7 +21,6 @@ public class Solution {
 
         public static int count = 0;
         public static int fightCount = 0;
-
         protected String name;
         protected int age;
         protected int weight;
@@ -29,7 +28,6 @@ public class Solution {
 
         public Cat(String name, int age, int weight, int strength) {
             count++;
-
             this.name = name;
             this.age = age;
             this.weight = weight;
@@ -38,11 +36,9 @@ public class Solution {
 
         public boolean fight(Cat anotherCat) {
             fightCount++;
-
             int agePlus = this.age > anotherCat.age ? 1 : 0;
             int weightPlus = this.weight > anotherCat.weight ? 1 : 0;
             int strengthPlus = this.strength > anotherCat.strength ? 1 : 0;
-
             int score = agePlus + weightPlus + strengthPlus;
             return score > 2; //эквивалентно return score > 2 ? true : false;
         }
